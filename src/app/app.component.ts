@@ -23,4 +23,10 @@ export class AppComponent {
       content: blueData.blueContent
     });
   }
+  onChangeFirst(){
+    this.serverElements[0].name = 'Changed!';
+  }
+  onDestoryFirst(){
+  this.serverElements.splice(0,1);
+  }
 }
